@@ -1,0 +1,76 @@
+<ul id="slide-out" class="sidenav">
+    <li>
+        <div class="user-view">
+            <div class="background">
+                <img src="../../../assets/img/sidenav.png">
+            </div>
+            <img class="circle" src="../../../assets/img/profile.png">
+            <span class="white-text name">Gerlâne Lima</span>
+            <a href="mailto:gerlima96@gmail.com"><span class="white-text email">gerlima96@gmail.com</span></a>
+        </div>
+    </li>
+    <li><a href="#about">Sobre mim</a></li>
+    <li><a href="#projects">Repositórios</a></li>
+    <li><a href="#social">Contato</a></li>
+    <li>
+        <div class="divider"></div>
+    </li>
+    <li class="subheader">Versão em inglês em desenvolvimento.</li>
+</ul>
+
+<div class="parallax-container">
+    <div id="floating-trigger">
+        <a href="#" data-target="slide-out"
+            class="btn-floating btn-large waves-effect waves-light sidenav-trigger indigo">
+            <i class="material-icons">menu</i>
+        </a>
+    </div>
+
+    <div class="parallax"><img src="../../../assets/img/background-gausiano.png"></div>
+
+    <div class="row" id="welcome-card">
+        <div class="col s12">
+            <div class="shadow-pop-br card indigo">
+                <div class="card-content">
+                    <span id="card-title">Olá! Hello! Holla! Coucou!</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" id="intro-card">
+        <div class="col s12">
+            <div class="shadow-pop-bl card indigo">
+                <div class="card-content">
+                    <p id="card-text">Meu nome é Gerlâne e esse é o meu portifólio de projetos.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="content">
+    <div class="title">
+        <span>Sobre mim</span>
+    </div>
+    <div id="about">
+        <app-about></app-about>
+    </div>
+    <div class="title">
+        <span>Meus repositórios</span>
+    </div>
+    <div id="projects">
+        <app-projects></app-projects>
+    </div>
+    <div class="title">
+        <span>Contato</span>
+    </div>
+</div>
+
+<div id="social">
+    <app-social></app-social>
+</div>
+
+<div id="footer">
+    <app-footer></app-footer>
+</div>
