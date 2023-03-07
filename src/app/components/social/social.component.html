@@ -26,7 +26,10 @@
     </div>
 
     <div class="col s6 m2 social-div" id="curriculo-button">
-        <a class="social-link" href="https://raw.githubusercontent.com/gerlaneln/gerlaneln/master/docs/assets/doc/Curriculo_Gerlane_Lima.pdf" target="_blank">
+        <a class="social-link" *ngIf="this.english == 0" href="https://raw.githubusercontent.com/gerlaneln/gerlaneln/master/docs/assets/doc/Curriculo_Gerlane_Lima.pdf" target="_blank">
+            <img class="social-img" src="https://raw.githubusercontent.com/gerlaneln/gerlaneln/master/docs/assets/img/social/cv-white.svg" alt="Currículo">
+        </a>
+        <a class="social-link" *ngIf="this.english == 1" href="https://raw.githubusercontent.com/gerlaneln/gerlaneln/master/docs/assets/doc/CV_Gerlane_Lima.pdf" target="_blank">
             <img class="social-img" src="https://raw.githubusercontent.com/gerlaneln/gerlaneln/master/docs/assets/img/social/cv-white.svg" alt="Currículo">
         </a>
     </div>

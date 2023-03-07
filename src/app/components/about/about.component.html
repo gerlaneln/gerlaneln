@@ -7,65 +7,107 @@
 
         <ul class="collapsible">
             <li>
-                <div class="collapsible-header">Apresentação</div>
+                <div class="collapsible-header" *ngIf="this.english == 0">Apresentação</div>
+                <div class="collapsible-header" *ngIf="this.english == 1">Introduction</div>
                 <div class="collapsible-body">
-                    <p>
+                    <p *ngIf="this.english == 0">
                         Olá, meu nome é Gerlâne Lima, eu nasci em Feijó no estado do Acre, mas atualmente
                         moro em João Pessoa na Paraíba.
                     </p>
-                    <p>
+                    <p *ngIf="this.english == 1">
+                        Hello, my name is Gerlâne Lima, I was born in Feijó in the state of Acre, but I currently 
+                        live in João Pessoa in Paraíba.
+                    </p>
+                    <p *ngIf="this.english == 0">
                         Fiz toda a minha educação básica em Feijó, até me mudar para Rio Branco, onde fiz
                         minha graduação na Universidade Federal do Acre, e minha especialização na Universidade
                         da Amazônia.
                     </p>
-                    <p>
+                    <p *ngIf="this.english == 1">
+                        I did all my basic education in Feijó, until I moved to Rio Branco, where I did my graduation 
+                        at the Federal University of Acre, and my specialization at the University of Amazônia.
+                    </p>
+                    <p *ngIf="this.english == 0">
                         Dentre as áreas da tecnologia, desenvolvimento web é a que eu escolhi para me aprofundar. 
                         Hoje em dia os sistemas web estão intrincados no nosso cotidiano, e é importante que as pessoas 
                         que fazem uso deles tenham sempre a melhor experiência possível, por isso dediquei o meu trabalho 
                         de conclusão de curso ao estudo da comunicabilidade de interfaces.
                     </p>
+                    <p *ngIf="this.english == 1">
+                        Among the areas of technology, web development is the one I chose to delve into. Nowadays, web systems are 
+                        intricate in our daily lives, and it is important that people who use them always have the best possible experience, 
+                        which is why I dedicated final thesis to the study of interface communicability.
+                    </p>
                 </div>
             </li>
             <li>
-                <div class="collapsible-header">Qualificações</div>
+                <div class="collapsible-header" *ngIf="this.english == 0">Qualificações</div>
+                <div class="collapsible-header" *ngIf="this.english == 1">Qualifications</div>
                 <div class="collapsible-body">
                     <ul id="qualifications-list">
-                        <li>
+                        <li *ngIf="this.english == 0">
                             <i class="tiny material-icons">keyboard_arrow_right</i>
-                            Web Academy Treinamento Full Stack - UFAC, Instituto Eldorado e Motorola .
+                            Web Academy Treinamento Full Stack - UFAC, Instituto Eldorado e Motorola.
                         </li>
-                        <li>
+                        <li *ngIf="this.english == 1">
+                            <i class="tiny material-icons">keyboard_arrow_right</i>
+                            Web Academy Full Stack Training - UFAC, Instituto Eldorado and Motorola.
+                        </li>
+                        <li *ngIf="this.english == 0">
                             <i class="tiny material-icons">keyboard_arrow_right</i>
                             Treinamento em desenvolvimento Full Stack - Gama Academy.
+                        </li>
+                        <li *ngIf="this.english == 1">
+                            <i class="tiny material-icons">keyboard_arrow_right</i>
+                            Full Stack development training - Gama Academy.
                         </li>
                         <li>
                             <i class="tiny material-icons">keyboard_arrow_right</i>
                             Responsive Web Design - freeCodeCamp.
                         </li>
-                        <li>
+                        <li *ngIf="this.english == 0">
                             <i class="tiny material-icons">keyboard_arrow_right</i>
                             Especialização em Marketing e Publicidade - Universidade da Amazônia.
                         </li>
-                        <li>
+                        <li *ngIf="this.english == 1">
+                            <i class="tiny material-icons">keyboard_arrow_right</i>
+                            Specialization in Marketing and Advertising - Universidade da Amazônia.
+                        </li>
+                        <li *ngIf="this.english == 0">
                             <i class="tiny material-icons">keyboard_arrow_right</i>
                             Bacharelado em Sistemas de Informação - Universidade Federal do Acre.
+                        </li>
+                        <li *ngIf="this.english == 1">
+                            <i class="tiny material-icons">keyboard_arrow_right</i>
+                            Bachelor's Degree in Information Systems - Federal University of Acre.
                         </li>
                     </ul>
                 </div>
             </li>
             <li>
-                <div class="collapsible-header">Experiência</div>
+                <div class="collapsible-header" *ngIf="this.english == 0">Experiência</div>
+                <div class="collapsible-header" *ngIf="this.english == 1">Experience</div>
                 <div class="collapsible-body">
-                    <li>
+                    <li *ngIf="this.english == 0">
                         <i class="tiny material-icons">keyboard_arrow_right</i>
                         Experiência trabalhando em equipe SCRUM, atuando como SCRUM Master em 2 sprints, desenvolvendo aplicação web em Angular, Spring Boot
                         e MySQL, dentro do projeto Web Academy, parceria entre Motorola, Universidade Federal do Acre,
                         e Instituto Eldorado.
                     </li>
-                    <li>
+                    <li *ngIf="this.english == 1">
+                        <i class="tiny material-icons">keyboard_arrow_right</i>
+                        Experience working in a SCRUM team, acting as SCRUM Master in 2 sprints, developing web application in Angular, Spring Boot and MySQL, 
+                        within the Web Academy project, partnership between Motorola, Federal University of Acre, and Instituto Eldorado.
+                    </li>
+                    <li *ngIf="this.english == 0">
                         <i class="tiny material-icons">keyboard_arrow_right</i>
                         Experiência voluntária oferencendo serviços gráficos, e mentoria, para pequenos negócios
                         que tiveram que se reinventar na pandemia.
+                    </li>
+                    <li *ngIf="this.english == 1">
+                        <i class="tiny material-icons">keyboard_arrow_right</i>
+                        Volunteer experience offering graphic services and mentoring for small businesses that had to 
+                        reinvent themselves during the pandemic.
                     </li>
                 </div>
             </li>
@@ -74,8 +116,11 @@
                 <div class="collapsible-body">
                     <div class="row">
                         <ul class="col s12 m3">
-                            <span>
+                            <span *ngIf="this.english == 0">
                                 Linguagens
+                            </span>
+                            <span *ngIf="this.english == 1">
+                                Languages
                             </span>
                             <li>
                                 <i class="tiny material-icons">keyboard_arrow_right</i>
@@ -128,8 +173,11 @@
                             </li>
                         </ul>
                         <ul class="col s12 m3">
-                            <span>
+                            <span *ngIf="this.english == 0">
                                 Tecnologias
+                            </span>
+                            <span *ngIf="this.english == 1">
+                                Technologies
                             </span>
                             <li>
                                 <i class="tiny material-icons">keyboard_arrow_right</i>
@@ -153,24 +201,43 @@
                             </li>
                         </ul>
                         <ul class="col s12 m3">
-                            <span>
-                                Idiomas
+                            <span *ngIf="this.english == 0">
+                                Idiomas Falados
                                 <a href="https://administradores.com.br/noticias/curriculo-como-informar-o-nivel-de-conhecimento-em-idiomas" 
                                     target="_blank" class="tooltipped" data-position="top" data-tooltip="Referência da classificação">
                                     <i class="tiny material-icons">open_in_new</i>
                                 </a>
                             </span>
-                            <li>
+                            <span *ngIf="this.english == 1">
+                                Spoken Languages
+                                <a href="https://administradores.com.br/noticias/curriculo-como-informar-o-nivel-de-conhecimento-em-idiomas" 
+                                    target="_blank" class="tooltipped" data-position="top" data-tooltip="Referência da classificação">
+                                    <i class="tiny material-icons">open_in_new</i>
+                                </a>
+                            </span>
+                            <li *ngIf="this.english == 0">
                                 <i class="tiny material-icons">keyboard_arrow_right</i>
                                 Inglês - Pós intermediário
                             </li>
-                            <li>
+                            <li *ngIf="this.english == 1">
+                                <i class="tiny material-icons">keyboard_arrow_right</i>
+                                English - Upper Intermediate
+                            </li>
+                            <li *ngIf="this.english == 0">
                                 <i class="tiny material-icons">keyboard_arrow_right</i>
                                 Espanhol - Iniciante
                             </li>
-                            <li>
+                            <li *ngIf="this.english == 1">
+                                <i class="tiny material-icons">keyboard_arrow_right</i>
+                                Spanish - Beginner
+                            </li>
+                            <li *ngIf="this.english == 0">
                                 <i class="tiny material-icons">keyboard_arrow_right</i>
                                 Francês - Iniciante
+                            </li>
+                            <li *ngIf="this.english == 1">
+                                <i class="tiny material-icons">keyboard_arrow_right</i>
+                                French - Beginner
                             </li>
                         </ul>
                     </div>
@@ -179,21 +246,37 @@
             <li>
                 <div class="collapsible-header">Soft skills</div>
                 <div class="collapsible-body">
-                    <li>
+                    <li *ngIf="this.english == 0">
                         <i class="tiny material-icons">keyboard_arrow_right</i>
                         Facilidade de aprendizado
                     </li>
-                    <li>
+                    <li *ngIf="this.english == 1">
+                        <i class="tiny material-icons">keyboard_arrow_right</i>
+                        Ease of learning
+                    </li>
+                    <li *ngIf="this.english == 0">
                         <i class="tiny material-icons">keyboard_arrow_right</i>
                         Espírito de colaboração
                     </li>
-                    <li>
+                    <li *ngIf="this.english == 1">
+                        <i class="tiny material-icons">keyboard_arrow_right</i>
+                        Spirit of collaboration
+                    </li>
+                    <li *ngIf="this.english == 0">
                         <i class="tiny material-icons">keyboard_arrow_right</i>
                         Comunicação
                     </li>
-                    <li>
+                    <li *ngIf="this.english == 1">
+                        <i class="tiny material-icons">keyboard_arrow_right</i>
+                        Communication
+                    </li>
+                    <li *ngIf="this.english == 0">
                         <i class="tiny material-icons">keyboard_arrow_right</i>
                         Resolução de problemas
+                    </li>
+                    <li *ngIf="this.english == 1">
+                        <i class="tiny material-icons">keyboard_arrow_right</i>
+                        Problem solving
                     </li>
                 </div>
             </li>

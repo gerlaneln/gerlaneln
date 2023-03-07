@@ -1,3 +1,4 @@
 <div>
-    <span id="disclaimer">Desenvolvido em Angular e Materialize CSS por Gerlâne Lima.</span>
+    <span id="disclaimer" *ngIf="this.english == 0">Desenvolvido em Angular e Materialize CSS por Gerlâne Lima.</span>
+    <span id="disclaimer" *ngIf="this.english == 1">Developed in Angular and Materialize CSS by Gerlâne Lima.</span>
 </div>
