@@ -21,6 +21,12 @@ body{
 
 /* Home */
 
+#div-language{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+}
+
 #floating-trigger {
         margin: 10px;
         position: fixed;
