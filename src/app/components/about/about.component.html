@@ -12,11 +12,11 @@
                 <div class="collapsible-body">
                     <p *ngIf="this.english == 0">
                         Olá, meu nome é Gerlâne Lima, eu nasci em Feijó no estado do Acre, mas atualmente
-                        moro em João Pessoa na Paraíba.
+                        moro em Curitiba no Paraná.
                     </p>
                     <p *ngIf="this.english == 1">
                         Hello, my name is Gerlâne Lima, I was born in Feijó in the state of Acre, but I currently 
-                        live in João Pessoa in Paraíba.
+                        live in Curitiba in Paraná.
                     </p>
                     <p *ngIf="this.english == 0">
                         Fiz toda a minha educação básica em Feijó, até me mudar para Rio Branco, onde fiz
@@ -37,6 +37,30 @@
                         Among the areas of technology, web development is the one I chose to delve into. Nowadays, web systems are 
                         intricate in our daily lives, and it is important that people who use them always have the best possible experience, 
                         which is why I dedicated final thesis to the study of interface communicability.
+                    </p>
+                    <p *ngIf="this.english == 0">
+                        Em 2023, me mudei para Curitiba e iniciei minha atuação no Núcleo de Concursos (NC) da Universidade Federal do Paraná (UFPR), onde trabalho atualmente. Desde então, venho aprimorando minhas habilidades em desenvolvimento de software, especialmente na construção de soluções full stack.
+                    </p>
+                    <p *ngIf="this.english == 1">
+                        In 2023, I moved to Curitiba and began working at the Núcleo de Concursos (NC) of the Federal University of Paraná (UFPR), where I currently work. Since then, I’ve been enhancing my software development skills, especially in building full stack solutions.
+                    </p>
+                    <p *ngIf="this.english == 0">
+                        No NC, desenvolvi três sistemas completos utilizando back end em Spring Boot (Java 8) e front end em Angular (versões 13 e 17). Esses sistemas envolvem modelagem de dados complexa, hierarquia de usuários, geração de relatórios, autenticação com JWT, integração com calendários, e operam sobre bancos de dados Oracle e MariaDB.
+                    </p>
+                    <p *ngIf="this.english == 1">
+                        At NC, I developed three full stack systems using Spring Boot (Java 8) for the back end and Angular (versions 13 and 17) for the front end. These systems involved complex data modeling, user hierarchy, report generation, JWT authentication, calendar integration, and operated with Oracle and MariaDB databases.
+                    </p>
+                    <p *ngIf="this.english == 0">
+                        Além disso, tive a oportunidade de aprofundar meus conhecimentos em SQL, participando de equipes responsáveis pelo processamento de concursos públicos e processos seletivos da UFPR. Nessas atividades, lidamos com o desempenho de dezenas de milhares de candidatos, implementando lógicas de cotas e migração de cotas conforme a legislação vigente.
+                    </p>
+                    <p *ngIf="this.english == 1">
+                        I also had the opportunity to deepen my SQL knowledge by working on teams responsible for processing public exams and selection processes at UFPR. These projects involved handling the performance data of tens of thousands of candidates, implementing quota policies and quota migration in accordance with current legislation.
+                    </p>
+                    <p *ngIf="this.english == 0">
+                        Acredito na importância do aprendizado constante e busco sempre evoluir como profissional, explorando novas abordagens, tecnologias e formas de pensar. Estou em busca de experiências que me desafiem, ampliem minha visão e contribuam para o meu crescimento pessoal e profissional no longo prazo.
+                    </p>
+                    <p *ngIf="this.english == 1">
+                        I believe in the importance of continuous learning and I’m always looking to grow as a professional by exploring new approaches, technologies, and ways of thinking. I seek experiences that challenge me, broaden my perspective, and contribute to my personal and professional growth in the long term.
                     </p>
                 </div>
             </li>
@@ -88,6 +112,14 @@
                 <div class="collapsible-header" *ngIf="this.english == 0">Experiência</div>
                 <div class="collapsible-header" *ngIf="this.english == 1">Experience</div>
                 <div class="collapsible-body">
+                    <li *ngIf="this.english == 0">
+                        <i class="tiny material-icons">keyboard_arrow_right</i>
+                        No Núcleo de Concursos da UFPR, atuei no desenvolvimento de sistemas full stack utilizando Spring Boot (Java 8) no back end e Angular (v.13 e v.17) no front end. Os projetos envolveram modelagem de dados complexa, hierarquia de usuários, autenticação com JWT, integração com calendários, e geração de relatórios, com uso de bancos de dados Oracle e MariaDB. Também trabalhei com SQL avançado em atividades de processamento de dados em larga escala, aplicando regras de negócio como cotas e migração de cotas conforme a legislação vigente.
+                    </li>
+                    <li *ngIf="this.english == 1">
+                        <i class="tiny material-icons">keyboard_arrow_right</i>
+                        At the UFPR’s Núcleo de Concursos, I worked on full stack system development using Spring Boot (Java 8) for the back end and Angular (v.13 and v.17) for the front end. The projects involved complex data modeling, user hierarchy, JWT authentication, calendar integration, and report generation, with Oracle and MariaDB databases. I also worked with advanced SQL in large-scale data processing tasks, implementing business rules such as quota policies and quota migration in compliance with current legislation.
+                    </li>
                     <li *ngIf="this.english == 0">
                         <i class="tiny material-icons">keyboard_arrow_right</i>
                         Experiência trabalhando em equipe SCRUM, atuando como SCRUM Master em 2 sprints, desenvolvendo aplicação web em Angular, Spring Boot
@@ -142,6 +174,10 @@
                                 <i class="tiny material-icons">keyboard_arrow_right</i>
                                 Type Script
                             </li>
+                            <li>
+                                <i class="tiny material-icons">keyboard_arrow_right</i>
+                                jQuery
+                            </li>
                         </ul>
                         <ul class="col s12 m3">
                             <span>
@@ -153,11 +189,15 @@
                             </li>
                             <li>
                                 <i class="tiny material-icons">keyboard_arrow_right</i>
-                                Angular 13
+                                Angular (v.13, v.17)
                             </li>
                             <li>
                                 <i class="tiny material-icons">keyboard_arrow_right</i>
                                 Spring Boot
+                            </li>
+                            <li>
+                                <i class="tiny material-icons">keyboard_arrow_right</i>
+                                Spring MVC
                             </li>
                             <li>
                                 <i class="tiny material-icons">keyboard_arrow_right</i>
@@ -185,11 +225,7 @@
                             </li>
                             <li>
                                 <i class="tiny material-icons">keyboard_arrow_right</i>
-                                Node JS
-                            </li>
-                            <li>
-                                <i class="tiny material-icons">keyboard_arrow_right</i>
-                                Mongo DB
+                                Node.js
                             </li>
                             <li>
                                 <i class="tiny material-icons">keyboard_arrow_right</i>
@@ -198,6 +234,22 @@
                             <li>
                                 <i class="tiny material-icons">keyboard_arrow_right</i>
                                 Cypress
+                            </li>
+                            <li>
+                                <i class="tiny material-icons">keyboard_arrow_right</i>
+                                Mongo DB
+                            </li>
+                            <li>
+                                <i class="tiny material-icons">keyboard_arrow_right</i>
+                                Maria DB
+                            </li>
+                            <li>
+                                <i class="tiny material-icons">keyboard_arrow_right</i>
+                                MySQL
+                            </li>
+                            <li>
+                                <i class="tiny material-icons">keyboard_arrow_right</i>
+                                Oracle (PL/SQL)
                             </li>
                         </ul>
                         <ul class="col s12 m3">
@@ -248,35 +300,51 @@
                 <div class="collapsible-body">
                     <li *ngIf="this.english == 0">
                         <i class="tiny material-icons">keyboard_arrow_right</i>
-                        Facilidade de aprendizado
+                        Aprendizado contínuo
                     </li>
                     <li *ngIf="this.english == 1">
                         <i class="tiny material-icons">keyboard_arrow_right</i>
-                        Ease of learning
+                        Continuous learning
                     </li>
                     <li *ngIf="this.english == 0">
                         <i class="tiny material-icons">keyboard_arrow_right</i>
-                        Espírito de colaboração
+                        Atenção aos detalhes
                     </li>
                     <li *ngIf="this.english == 1">
                         <i class="tiny material-icons">keyboard_arrow_right</i>
-                        Spirit of collaboration
+                        Attention to detail
                     </li>
                     <li *ngIf="this.english == 0">
                         <i class="tiny material-icons">keyboard_arrow_right</i>
-                        Comunicação
+                        Trabalho em equipe
                     </li>
                     <li *ngIf="this.english == 1">
                         <i class="tiny material-icons">keyboard_arrow_right</i>
-                        Communication
+                        Teamwork
                     </li>
                     <li *ngIf="this.english == 0">
                         <i class="tiny material-icons">keyboard_arrow_right</i>
-                        Resolução de problemas
+                        Capacidade de resolver problemas
                     </li>
                     <li *ngIf="this.english == 1">
                         <i class="tiny material-icons">keyboard_arrow_right</i>
-                        Problem solving
+                        Problem-solving skills
+                    </li>
+                    <li *ngIf="this.english == 0">
+                        <i class="tiny material-icons">keyboard_arrow_right</i>
+                        Adaptabilidade
+                    </li>
+                    <li *ngIf="this.english == 1">
+                        <i class="tiny material-icons">keyboard_arrow_right</i>
+                        Adaptability
+                    </li>
+                    <li *ngIf="this.english == 0">
+                        <i class="tiny material-icons">keyboard_arrow_right</i>
+                        Proatividade
+                    </li>
+                    <li *ngIf="this.english == 1">
+                        <i class="tiny material-icons">keyboard_arrow_right</i>
+                        Proactivity
                     </li>
                 </div>
             </li>
