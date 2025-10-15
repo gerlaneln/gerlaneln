@@ -2,7 +2,9 @@
 
 I'm a Full Stack Web Developer with 4+ years of experience turning ideas into solid, scalable web solutions — both on the front-end and back-end.
 
-Currently, I'm working as a Junior Systems Analyst at the Federal University of Paraná (UFPR), where I help build and maintain web systems that support public exams and selection processes. My main stack includes **Java with Spring Boot**, **Angular (v13 & v17)**, and **Oracle databases**, but I also have experience with **React, React Native**, **MongoDB**, and **MySQL**.
+On my last row, I was working as a Junior Systems Analyst at the Federal University of Paraná (UFPR), where I helped build and maintain web systems that support public exams and selection processes. Currently, I am working as a Systems Analyst at Vivo (Telefônica Brasil), where I help with systems sustainability.
+
+My main stack includes **Java with Spring Boot**, **Angular (v13 & v17)**, and **Oracle databases**, but I also have experience with **React, React Native**, **MongoDB**, and **MySQL**.
 
 On the back-end side, I work a lot with RESTful APIs, JWT authentication, data modeling, PL/SQL scripts, and reporting tools. On the front-end, I build user-friendly interfaces using Angular, integrating with back-end services and focusing on performance and usability. I've also handled legacy systems built in Spring MVC.
 
